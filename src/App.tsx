@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css'
 
 interface Task {
   text: string;
   done: boolean;
 }
-
 function App() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [input, setInput] = useState<string>("");
@@ -30,7 +29,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>🌸 Ma To-Do List</h1>
+      <h1>🌸 To-Do List</h1>
       <div className="input-container">
         <input
           value={input}
